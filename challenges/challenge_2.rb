@@ -38,8 +38,10 @@ puts "That's done. Now I'm copying them to #{to_file} in reverse order."
 in_file = open(write_file)
 indata = in_file.read
 
+indatareverse=indata.reverse
+
 out_file = open(to_file, 'w')
-out_file.write(indata)
+out_file.write(indatareverse)
 
 out_file.close
 in_file.close
