@@ -43,5 +43,7 @@ indatareverse=indata.reverse
 out_file = open(to_file, 'w')
 out_file.write(indatareverse)
 
+puts "All done. Have a look and compare #{write_file} and #{to_file}."
+
 out_file.close
 in_file.close
