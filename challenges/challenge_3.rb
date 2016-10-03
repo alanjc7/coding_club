@@ -20,9 +20,8 @@ Given an array, return a new array containing only the elements that starts with
 puts "Exercise_2"
 colours = ["green", "yellow", "aqua", "blue", "orange", "red", "purple", "indigo"]
 vowels = ["a", "e", "i", "o", "u"]
-#vowel_colours = colours.select { |v| v[0] ==  }
-#vowel_colours = colours.start_with?('a','e','i','o','u')
-#puts vowel_colours
+vowel_colours = colours.select { |v| v.start_with?('a','e','i','o','u') }
+puts vowel_colours
 
 puts "________________________"
 
