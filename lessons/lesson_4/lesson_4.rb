@@ -66,6 +66,5 @@ puts "__________________________"
 #create pair of two people not from same department
 #joining date is 2 months apart
 
-#sfsdfg
 pairs = db.combination(2).to_a
 puts pairs
