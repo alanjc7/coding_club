@@ -6,11 +6,11 @@ i_do_nothing()
 def is_even?(number)
 	ans = number%2 
 	if ans == 1 
-		puts"no"
+		a = false
 	else 
-		puts"yes"
+		a = true
 	end
-	return
+	return a 
 end
 
 is_3_even = is_even?(3)
@@ -23,5 +23,4 @@ puts is_4_even
 
 puts is_5_even
 
-
-is_even?(7)
+puts is_even?(7)
