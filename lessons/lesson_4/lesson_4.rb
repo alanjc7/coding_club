@@ -54,12 +54,14 @@ db = build_database(filename)
 
 def find_my_join_date(db, first_name, last_name)
 	# use each to search each array and then when matched print the [4] element to give the date
-	x = db.select { |a| a[0] == first_name }
+	x = db.select { |a| a[0] == first_name and a[1] == last_name}
 	puts "#{x[0][4]}"
 	return x[4]
 end
 
-puts find_my_join_date(db, "Stefania", "")
+puts find_my_join_date(db, "Stefania", "Cardenas")
+
+puts "__________________________"
 
 #create pair of two people not from same department
 #joining date is 2 months apart
