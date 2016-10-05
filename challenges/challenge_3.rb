@@ -1,4 +1,5 @@
 =begin
+Created for comments
 Exercise 1:*
 Given an array, return a new array containing only the elements that starts with 'a’
 For example, an array like `['bananas', 'apples', 'pears', 'avocados']` should return `['apples', 'avocados']`
