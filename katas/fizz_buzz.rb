@@ -1,6 +1,6 @@
 #1. Define a function that checks if a number is divisible by 3. It should take one argument. It should return true or false
 def div_by_3(number)
-	ans = number%3
+	ans = number % 3
 	if ans == 0
 		a = true
 	else a = false
@@ -14,7 +14,7 @@ puts "_____________________________"
 
 #2. Define a function that checks if a number is divisible by 5. It should take one argument. It should return true or false
 def div_by_5(number)
-	ans = number%5
+	ans = number % 5
 	if ans == 0
 		a = true
 	else a = false
@@ -28,8 +28,8 @@ puts "_____________________________"
 
 #3. Define a function that checks if a number is divisible by 3 and 5. It should take one argument. It should return true or false
 def div_by_3_5(number)
-	div3 = number%3
-	div5 = number%5
+	div3 = number % 3
+	div5 = number % 5
 	if div3 == 0 and div5 == 0
 		a = true
 	else a = false
