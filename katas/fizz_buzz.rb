@@ -65,6 +65,7 @@ def fizz_or_buzz(number)
 		a = "Buzz"
 	elsif d3 == false and d5 == true
 		a = "Fizz"
+	else a = number #this was added as part of challenge 5
 	end
 	return a
 end
@@ -80,6 +81,8 @@ onetothirty = (0..30).to_a
 
 #5. Given an array containing numbers from 0 to 30, return a new array where every number divisible by 3 has been replaced by 'Fizz', every number divisible by 5 has been replaced by 'Buzz' and every number divisible by both 3 and 5 has been replaced by 'FizzBuzz'.
 
+fizzbuzz30 = onetothirty.map { |e| fizz_or_buzz(e) }
 
+puts fizzbuzz30
 
 puts "_____________________________"
