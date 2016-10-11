@@ -1,11 +1,6 @@
 #1. Define a function that checks if a number is divisible by 3. It should take one argument. It should return true or false
 def div_by_3(number)
-	ans = number%3
-	if ans == 0
-		a = true
-	else a = false
-	end
-	return a
+	number%3 == 0
 end
 
 puts div_by_3(99)
@@ -14,12 +9,7 @@ puts "_____________________________"
 
 #2. Define a function that checks if a number is divisible by 5. It should take one argument. It should return true or false
 def div_by_5(number)
-	ans = number%5
-	if ans == 0
-		a = true
-	else a = false
-	end
-	return a
+	number%5 == 0
 end
 
 puts div_by_5(100)
@@ -65,6 +55,7 @@ def fizz_or_buzz(number)
 		a = "Buzz"
 	elsif d3 == false and d5 == true
 		a = "Fizz"
+	else a = "#{number}" #this was added as part of challenge 5
 	end
 	return a
 end
@@ -80,6 +71,8 @@ onetothirty = (0..30).to_a
 
 #5. Given an array containing numbers from 0 to 30, return a new array where every number divisible by 3 has been replaced by 'Fizz', every number divisible by 5 has been replaced by 'Buzz' and every number divisible by both 3 and 5 has been replaced by 'FizzBuzz'.
 
-
+ fizzbuzz30 = onetothirty.map { |e| fizz_or_buzz(e) }
+ 
+ puts fizzbuzz30
 
 puts "_____________________________"
