@@ -1,11 +1,6 @@
 #1. Define a function that checks if a number is divisible by 3. It should take one argument. It should return true or false
 def div_by_3(number)
-	ans = number % 3
-	if ans == 0
-		a = true
-	else a = false
-	end
-	return a
+	number%3 == 0
 end
 
 puts div_by_3(99)
@@ -14,12 +9,7 @@ puts "_____________________________"
 
 #2. Define a function that checks if a number is divisible by 5. It should take one argument. It should return true or false
 def div_by_5(number)
-	ans = number % 5
-	if ans == 0
-		a = true
-	else a = false
-	end
-	return a
+	number%5 == 0
 end
 
 puts div_by_5(100)
