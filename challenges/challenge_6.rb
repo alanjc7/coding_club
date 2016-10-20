@@ -2,7 +2,9 @@
 #Example: my_join (["x", "y", "z"], "+") should return "x + y + z" (edited)
 
 def my_join(array, separator)
-	joined_string = array.join(separator)
+	array_string = " "
+	array.each{ |a| array_string << a + separator }
+	return array_string
 end
 
 puts my_join(["x", "y", "z"], "+")
