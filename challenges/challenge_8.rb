@@ -13,13 +13,13 @@ class Game
 end
 
 class Room
-	def initialise(door_name)
+	def initialize(door_name)
 		@door_name = door_name
 	end
 end
 
 class Character
-	def initialise(character_name, nickname, of)
+	def initialize(character_name, nickname, of)
 		@character_name = character_name
 		@nickname = nickname
 		@of = of
@@ -37,7 +37,7 @@ class Character
 end
 
 class Challenge
-	def initialise(challenge)
+	def initialize(challenge)
 		@challenge = challenge
 		puts challenge
 		@decisions = []
@@ -49,12 +49,9 @@ class Challenge
 end
 
 class Decision
-	def initialise(decision)
+	def initialize(decision, outcome)
 		@decision = decision
-	end
-
-	def outcome
-
+		@outcome = outcome
 	end
 end
 
@@ -69,13 +66,27 @@ fire_door = Room.new("Fire Door")
 
 snow_door = Room.new("Snow Door")
 
+#create character Gunter
 gunter = Character.new("Gunter", "the Evil Penguin", "Tech Support")
 gunter.action("He has a casket full of tech support tickets")
 
+#create challenge
+gunter_challenge = Challenge.new("Now you must choose what to do!")
+
+#create Gunter's two decisions 
+gunter_decision_one = Decision.new("Take the casket and destroy the tickets", "Well done! You are now the king of Tech Support")
+gunter_decision_two = Decision.new("Slap that creepy Penguin", "You fool. The curse of tech support is on you. You will have to fix ecery ticket for eternity")
+
+
+
+
+#create character Princess Bubblegum
 princes_bubblegum = Character.new("Princess Bubblegum", "the Beautiful Princess", "Sainsburys Deliveries")
 princes_bubblegum.action("She has a bucket full of belvita biscuits")
 
-
+#create Princess Bubblegums's two decisions
+princes_bubblegum_one = Decision.new("Eat the biscuits", "You fool! Neusha will tell and Eamon and he will fire you!")
+princes_bubblegum_two = Decision.new("Save them for Shakes", "The force runs strong with this one. You have saved Shakes from starvation!")
 
 
 
