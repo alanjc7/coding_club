@@ -1,3 +1,5 @@
+#class is a framework for creating many objects with the same format/attributes
+
 class BookCard
 	def initialize(title)
 		@title = title

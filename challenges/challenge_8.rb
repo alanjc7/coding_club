@@ -72,6 +72,9 @@ gunter.action("He has a casket full of tech support tickets")
 
 #create challenge
 gunter_challenge = Challenge.new("Now you must choose what to do!")
+#add decisions to Challenge
+gunter_challenge.decision(gunter_decision_one)
+gunter_challenge.decision(gunter_decision_two)
 
 #create Gunter's two decisions 
 gunter_decision_one = Decision.new("Take the casket and destroy the tickets", "Well done! You are now the king of Tech Support")
@@ -87,8 +90,6 @@ princes_bubblegum.action("She has a bucket full of belvita biscuits")
 #create Princess Bubblegums's two decisions
 princes_bubblegum_one = Decision.new("Eat the biscuits", "You fool! Neusha will tell and Eamon and he will fire you!")
 princes_bubblegum_two = Decision.new("Save them for Shakes", "The force runs strong with this one. You have saved Shakes from starvation!")
-
-
 
 
 
