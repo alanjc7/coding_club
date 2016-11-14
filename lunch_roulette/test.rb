@@ -1,7 +1,9 @@
 require_relative "./onfidoer"
+require_relative "./groups_generator"
 require 'date'
+require 'csv'
 
-myself = Onfidoer.new("Alan", "Carrie", "04/02/2016", "Service Delivery", "ODT")
+myself = Onfidoer.new("Alan", "Carrie", "Service Delivery", "ODT", "04/02/2016")
 
 myself.display_name
 
@@ -19,3 +21,11 @@ another_day = Date.parse("04/02/2016")
 diff = today - another_day
 puts diff
 =end
+
+array = [[1, 2], [3, 4]]
+
+csv = array.map(&:to_csv).join
+
+puts csv.class
+
+puts array.length

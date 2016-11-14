@@ -1,6 +1,9 @@
 require 'date'
 
 class Onfidoer
+
+	attr_accessor :first_name, :last_name
+
 	def initialize(first_name, last_name, dept, team, join_date)
 		@first_name = first_name
 		@last_name = last_name
@@ -10,7 +13,7 @@ class Onfidoer
 	end
 
 	def display_name
-		puts "#{@first_name}\t#{@last_name.upcase}"
+		puts "#{@first_name}\t#{@last_name.upcase}" #\t is for tab
 	end
 
 	def display_attributes
