@@ -28,7 +28,7 @@ def build_database(filename)
 	lines = get_file_lines(filename)
 	lines.each { |x| db << parse_csv_line(x) }
 	#create new instance of Onfidoer for each item in the array
-	db.each { |x| Onfidoer.new(*x) }  #there is a problem with this line 
+	db.each { |x| Onfidoer.new(*x) }  #there was a problem with this line 
 end
 
 db = build_database(filename)
