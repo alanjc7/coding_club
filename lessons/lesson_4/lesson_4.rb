@@ -15,8 +15,6 @@ end
 def parse_csv_line(text_line)
 	#split the lines by comma
 	columns = text_line.split(",")
-	#but we need to remove some of them have spaces
-	#create an empty array
 	values = []
 	#add new values to the array by using built in function strip which strips spaces
 	columns.each { |x| values << x.strip}

@@ -1,7 +1,7 @@
 require 'date'
 
 class Onfidoer
-	def initialize(first_name, last_name, join_date, team, dept)
+	def initialize(first_name, last_name, dept, team, join_date)
 		@first_name = first_name
 		@last_name = last_name
 		@join_date = join_date
