@@ -2,7 +2,7 @@ require 'date'
 
 class Onfidoer
 
-	attr_accessor :first_name, :last_name
+	attr_accessor :first_name, :last_name, :dept
 
 	def initialize(first_name, last_name, dept, team, join_date)
 		@first_name = first_name
@@ -27,11 +27,8 @@ class Onfidoer
 	end
 
 	def year_joined
-		d = Date.parse(@join_date)
-		puts d.year
-		#year = @join_date[-4..-1]
-		#puts year
-		#year = @join_date.split('/')[-1]
+		date = Date.parse(@join_date)
+		puts date.year
 	end
 end
 

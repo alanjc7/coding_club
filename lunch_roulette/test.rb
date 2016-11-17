@@ -22,10 +22,17 @@ diff = today - another_day
 puts diff
 =end
 
-array = [[1, 2], [3, 4]]
+array = [[1, 2, 3], [3, 4, 5], [6, 7]]
 
-csv = array.map(&:to_csv).join
-
-puts csv.class
+#csv = array.map(&:to_csv).join
+#puts csv.class
 
 puts array.length
+
+puts array[0].length
+
+array[0] << array[2][0]
+
+array[1] << array[2][1]
+
+puts array[0].length

@@ -13,5 +13,5 @@ create instance of Onfidoer for every row from the CSV and store it in an array
 
 5) Save in a CSV, each individual groups as a line
 
-6) Given a group number print the unique teams of group memebers - ie if there is 2 engineers only print it once
+6) Given a group number print the unique teams of group members - ie if there is 2 engineers only print it once
 

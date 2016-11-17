@@ -1,6 +1,7 @@
 require_relative './onfidoer'
 require_relative './groups_generator'
 
+
 filename = ARGV[0]
 group_num = ARGV[1].to_i
 
@@ -29,11 +30,14 @@ end
 
 onfidoers = create_onfidoers(filename)
 
-def generate_groups(onfidoers, num)
-	new_group = GroupGenerator.new(onfidoers)
-	#new_group.display_groups(num)
-	new_group.save_groups_to_csv(num)
-	#new_group.get_groups_of(num)
+def generate_groups(onfidoers, group_num)
+	new_group = GroupGenerator.new(onfidoers, group_num)
+	#new_group.display_groups
+	new_group.sliced_groups
+	new_group.group_divider
+	new_group.save_groups_to_csv
+	new_group.display_teams(1)
+
 end
 
 generate_groups(onfidoers, group_num)
